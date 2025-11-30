@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { getAllVideos } from '../Api/Api'
-import diesel from '../assets/diesel.jpg'
 import VideoCard from '../Components/VideoCard'
 import { useNavigate } from 'react-router-dom'
 

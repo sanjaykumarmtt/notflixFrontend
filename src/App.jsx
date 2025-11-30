@@ -3,13 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import NavBar from './Pages/NavBar'
-import Signup from './Pages/Signup'
-import Home from './Pages/Home'
-import Login from './Pages/Login'
-import ProtectedRoutes from './Components/ProtectedRoutes'
-import { useAuth } from './Api/AuthContext'
-import VideoPlayer from './Pages/VideoPlayer'
+import NavBar from './Pages/NavBar.jsx'
+
+import Home from './Pages/Home.jsx'
+import Login from './Pages/Login.jsx'
+import ProtectedRoutes from './Components/ProtectedRoutes.jsx'
+import { useAuth } from './Api/AuthContext.jsx'
+import VideoPlayer from './Pages/VideoPlayer.jsx'
+import Signup from './Pages/Signup.jsx'
 
 
 function App() {
