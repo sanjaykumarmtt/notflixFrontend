@@ -1,6 +1,6 @@
 import axios from 'axios'
 const axiosClient =axios.create({
-    baseURL:"http://localhost:8080"
+    baseURL:"https://notflix-1026895752040.europe-west1.run.app"
 })
 
 axiosClient.interceptors.request.use(

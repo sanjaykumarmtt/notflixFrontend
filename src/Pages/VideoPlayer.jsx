@@ -34,6 +34,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getVideoById } from '../Api/Api';
+import HlsPlayer from '../Components/HlsPlayer';
 
 const VideoPlayer = () => {
 
@@ -66,11 +67,7 @@ const VideoPlayer = () => {
 
             <h1 className='text-center text-xl font-semibold mb-2'>{video.title}</h1>
 
-            <video 
-                className='w-full rounded-md shadow-lg h-64'
-                controls 
-                src={video.url}
-            ></video>
+             <HlsPlayer src={video.url} />
 
             
         </div>
